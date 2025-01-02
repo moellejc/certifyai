@@ -10,6 +10,7 @@
     "outDir": "dist",
     "importsNotUsedAsValues": "remove",
     "strict": true,
+    "resolveJsonModule": true, // enables JSON module import
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
