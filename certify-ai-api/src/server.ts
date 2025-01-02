@@ -31,7 +31,7 @@ app.use(requestLogger);
 // Routes
 app.use("/health-check", healthCheckRouter);
 app.use("/users", userRouter);
-app.use("/certifcations", certificationRouter);
+app.use("/certifications", certificationRouter);
 
 // Swagger UI
 app.use(openAPIRouter);

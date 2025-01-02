@@ -14,11 +14,11 @@ const certs: Certification[] = certificationData.certifications.map((cert) => ({
 
 export class CertificationRepository {
   async findAllAsync(): Promise<Certification[]> {
-    console.log(certs);
     return certs;
   }
 
   async findByIdAsync(id: number): Promise<Certification | null> {
+    console.log(id);
     return certs.find((cert) => cert.id === id) || null;
   }
 }

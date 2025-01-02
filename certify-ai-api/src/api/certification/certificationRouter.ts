@@ -32,8 +32,11 @@ certificationRegistry.registerPath({
   responses: createApiResponse(CertificationSchema, "Success"),
 });
 
-certificationRouter.get(
-  "/:id",
-  validateRequest(CertificationSchema),
-  certificationController.getCertification
-);
+certificationRouter.get("/:id", certificationController.getCertification);
+
+// TODO: fix validation request
+// certificationRouter.get(
+//     "/:id",
+//     validateRequest(CertificationSchema),
+//     certificationController.getCertification
+//   );

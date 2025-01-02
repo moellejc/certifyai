@@ -2,6 +2,7 @@ import type { Request, RequestHandler, Response } from "express";
 
 import { certificationService } from "@/api/certification/certificationService";
 import { handleServiceResponse } from "@/common/utils/httpHandlers";
+import { logger } from "@/server";
 
 class CertificationController {
   public getCertifications: RequestHandler = async (
@@ -9,8 +10,6 @@ class CertificationController {
     res: Response
   ) => {
     const serviceResponse = await certificationService.findAll();
-    console.log("All Certifcations");
-    console.log(serviceResponse.message);
     return handleServiceResponse(serviceResponse, res);
   };
 

@@ -15,8 +15,11 @@ export class CertificationService {
 
   // Retrieves all Certification from the database
   async findAll(): Promise<ServiceResponse<Certification[] | null>> {
+    logger.info("start find all certs");
     try {
       const certs = await this.certificationRepository.findAllAsync();
+      logger.info("certs found");
+      logger.info(certs);
       if (!certs || certs.length === 0) {
         return ServiceResponse.failure(
           "No Certifications found",
