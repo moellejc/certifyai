@@ -1,7 +1,10 @@
 {
-  "name": "certify-ai-mobile",
+  "name": "Certify AI Mobile",
   "main": "expo-router/entry",
   "version": "1.0.0",
+  "description": "Certify AI Reach Native mobile app",
+  "author": "Joe Moeller",
+  "repository": "moellejc/certifyai",
   "scripts": {
     "start": "expo start",
     "reset-project": "node ./scripts/reset-project.js",
