@@ -1,10 +1,10 @@
 {
   "questions": [
     {
-      "question_id": "1",
+      "id": "1",
       "question": "What type of data structure is typically used when storing data in a relational database?",
-      "question_category": "multiple choice",
-      "question_type": "Relational Database",
+      "type": "multiple choice",
+      "category": "Relational Database",
       "options": [
         { "a": "Tree" },
         { "b": "Graph" },
@@ -16,20 +16,20 @@
       "citation": "https://learn.microsoft.com/en-us/training/modules/explore-relational-data-offerings/2-understand-relational-data"
     },
     {
-      "question_id": "2",
+      "id": "2",
       "question": "True or False: A primary key in a database can have duplicate values.",
-      "question_category": "true/false",
-      "question_type": "Database Keys",
+      "type": "true/false",
+      "category": "Database Keys",
       "options": [{ "a": "True" }, { "b": "False" }],
       "answer": { "b": "False" },
       "explanation": "A primary key must have unique values and cannot contain NULLs. It uniquely identifies each record in a table.",
       "citation": "https://learn.microsoft.com/en-us/training/modules/explore-relational-data-offerings/2-understand-relational-data"
     },
     {
-      "question_id": "3",
+      "id": "3",
       "question": "In Azure, which service is designed for large-scale processing of real-time data streams?",
-      "question_category": "multiple choice",
-      "question_type": "Azure Services",
+      "type": "multiple choice",
+      "category": "Azure Services",
       "options": [
         { "a": "Azure Machine Learning" },
         { "b": "Azure Stream Analytics" },
@@ -41,10 +41,10 @@
       "citation": "https://learn.microsoft.com/en-us/training/modules/explore-fundamentals-stream-processing/1-introduction"
     },
     {
-      "question_id": "4",
+      "id": "4",
       "question": "Fill in the blank: In Azure Cosmos DB, the _____ API is used to query data using SQL syntax.",
-      "question_category": "fill-in-the-blank",
-      "question_type": "Azure Cosmos DB",
+      "type": "fill-in-the-blank",
+      "category": "Azure Cosmos DB",
       "options": [
         { "a": "SQL" },
         { "b": "Gremlin" },
@@ -56,10 +56,10 @@
       "citation": "https://learn.microsoft.com/en-us/training/modules/explore-non-relational-data-stores-azure/3-cosmos-db-apis"
     },
     {
-      "question_id": "5",
+      "id": "5",
       "question": "Which of the following is NOT a feature of Azure Blob Storage?",
-      "question_category": "multiple choice",
-      "question_type": "Azure Storage",
+      "type": "multiple choice",
+      "category": "Azure Storage",
       "options": [
         { "a": "Hierarchical namespace" },
         { "b": "Object replication" },
@@ -71,20 +71,20 @@
       "citation": "https://learn.microsoft.com/en-us/training/modules/explore-provision-deploy-non-relational-data-services-azure/2-azure-blob-storage"
     },
     {
-      "question_id": "6",
+      "id": "6",
       "question": "True or False: A data lake is primarily used for structured data and OLTP transactions.",
-      "question_category": "true/false",
-      "question_type": "Data Lake",
+      "type": "true/false",
+      "category": "Data Lake",
       "options": [{ "a": "True" }, { "b": "False" }],
       "answer": { "b": "False" },
       "explanation": "A data lake is designed to store large volumes of both structured and unstructured data from various sources and is optimized for analytics, not for Online Transaction Processing (OLTP).",
       "citation": "https://learn.microsoft.com/en-us/training/modules/explore-core-data-concepts/4-databases"
     },
     {
-      "question_id": "7",
+      "id": "7",
       "question": "Which SQL statement is used to retrieve data from a database?",
-      "question_category": "multiple choice",
-      "question_type": "SQL Basics",
+      "type": "multiple choice",
+      "category": "SQL Basics",
       "options": [
         { "a": "DELETE" },
         { "b": "SELECT" },
@@ -96,10 +96,10 @@
       "citation": "https://learn.microsoft.com/en-us/training/modules/explore-relational-data-offerings/4-query-with-sql"
     },
     {
-      "question_id": "8",
+      "id": "8",
       "question": "What is Azure Synapse Analytics primarily used for?",
-      "question_category": "multiple choice",
-      "question_type": "Azure Synapse",
+      "type": "multiple choice",
+      "category": "Azure Synapse",
       "options": [
         { "a": "Real-time event processing" },
         { "b": "Data integration and big data analytics" },
@@ -111,10 +111,10 @@
       "citation": "https://learn.microsoft.com/en-us/training/modules/examine-components-of-modern-data-warehouse/2-describe-warehousing"
     },
     {
-      "question_id": "9",
+      "id": "9",
       "question": "Which of the following is a role focused on designing, implementing, and maintaining data architecture?",
-      "question_category": "multiple choice",
-      "question_type": "Data Roles",
+      "type": "multiple choice",
+      "category": "Data Roles",
       "options": [
         { "a": "Database Administrator" },
         { "b": "Data Analyst" },
@@ -126,10 +126,10 @@
       "citation": "https://learn.microsoft.com/en-us/training/modules/explore-roles-responsibilities-world-of-data/2-explore-job-roles"
     },
     {
-      "question_id": "10",
+      "id": "10",
       "question": "Fill in the blank: _______ is an Azure service that enables real-time analytics on data streaming from applications.",
-      "question_category": "fill-in-the-blank",
-      "question_type": "Azure Services",
+      "type": "fill-in-the-blank",
+      "category": "Azure Services",
       "options": [
         { "a": "Azure Synapse" },
         { "b": "AzureData Factory" },
@@ -141,10 +141,10 @@
       "citation": "https://learn.microsoft.com/en-us/training/modules/explore-fundamentals-stream-processing/1-introduction"
     },
     {
-      "question_id": "11",
+      "id": "11",
       "question": "Which type of data processing is suitable for real-time analytics use cases?",
-      "question_category": "multiple choice",
-      "question_type": "Data Processing",
+      "type": "multiple choice",
+      "category": "Data Processing",
       "options": [
         { "a": "Batch processing" },
         { "b": "Stream processing" },
@@ -156,10 +156,10 @@
       "citation": "https://learn.microsoft.com/en-us/training/modules/explore-fundamentals-stream-processing/2-batch-stream"
     },
     {
-      "question_id": "12",
+      "id": "12",
       "question": "What is the main purpose of data visualization?",
-      "question_category": "multiple choice",
-      "question_type": "Data Visualization",
+      "type": "multiple choice",
+      "category": "Data Visualization",
       "options": [
         { "a": "To encrypt data for security" },
         { "b": "To present data in a pictorial or graphical format" },
@@ -171,20 +171,20 @@
       "citation": "https://learn.microsoft.com/en-us/training/modules/explore-fundamentals-data-visualization/4-data-visualizations"
     },
     {
-      "question_id": "13",
+      "id": "13",
       "question": "True or False: Azure Data Lake supports hierarchical file organization.",
-      "question_category": "true/false",
-      "question_type": "Azure Data Lake",
+      "type": "true/false",
+      "category": "Azure Data Lake",
       "options": [{ "a": "True" }, { "b": "False" }],
       "answer": { "a": "True" },
       "explanation": "Azure Data Lake Gen2 supports a hierarchical namespace, allowing for file directory structures similar to a traditional file system.",
       "citation": "https://learn.microsoft.com/en-us/training/modules/explore-provision-deploy-non-relational-data-services-azure/3-azure-data-lake-gen2"
     },
     {
-      "question_id": "14",
+      "id": "14",
       "question": "Fill in the blank: Azure _____ is a fully managed service that automates the movement and transformation of data across various storage systems.",
-      "question_category": "fill-in-the-blank",
-      "question_type": "Azure Services",
+      "type": "fill-in-the-blank",
+      "category": "Azure Services",
       "options": [
         { "a": "Machine Learning" },
         { "b": "Data Factory" },
@@ -196,10 +196,10 @@
       "citation": "https://learn.microsoft.com/en-us/training/modules/examine-components-of-modern-data-warehouse/3-data-ingestion-pipelines"
     },
     {
-      "question_id": "15",
+      "id": "15",
       "question": "Which Azure database offering is best suited for relational data storage?",
-      "question_category": "multiple choice",
-      "question_type": "Azure Databases",
+      "type": "multiple choice",
+      "category": "Azure Databases",
       "options": [
         { "a": "Azure Blob Storage" },
         { "b": "Azure Cosmos DB" },
@@ -211,10 +211,10 @@
       "citation": "https://learn.microsoft.com/en-us/training/modules/explore-provision-deploy-relational-database-offerings-azure/2-azure-sql"
     },
     {
-      "question_id": "16",
+      "id": "16",
       "question": "What is normalization in the context of relational databases?",
-      "question_category": "multiple choice",
-      "question_type": "Database Design",
+      "type": "multiple choice",
+      "category": "Database Design",
       "options": [
         { "a": "The process of de-normalizing data for performance" },
         { "b": "The organization of data to minimize redundancy" },
@@ -226,10 +226,10 @@
       "citation": "https://learn.microsoft.com/en-us/training/modules/explore-relational-data-offerings/3-normalization"
     },
     {
-      "question_id": "17",
+      "id": "17",
       "question": "Which Azure service is primarily used for non-relational, key-value, and wide-column databases?",
-      "question_category": "multiple choice",
-      "question_type": "Azure Services",
+      "type": "multiple choice",
+      "category": "Azure Services",
       "options": [
         { "a": "Azure SQL Database" },
         { "b": "Azure Table Storage" },
@@ -241,10 +241,10 @@
       "citation": "https://learn.microsoft.com/en-us/training/modules/explore-provision-deploy-non-relational-data-services-azure/5-azure-tables"
     },
     {
-      "question_id": "18",
+      "id": "18",
       "question": "Which of the following is a benefit of using Azure Cosmos DB for global distribution?",
-      "question_category": "multiple choice",
-      "question_type": "Azure Cosmos DB",
+      "type": "multiple choice",
+      "category": "Azure Cosmos DB",
       "options": [
         { "a": "Low latency at the 99th percentile" },
         { "b": "Multiple consistency models" },
@@ -256,20 +256,20 @@
       "citation": "https://learn.microsoft.com/en-us/training/modules/explore-non-relational-data-stores-azure/2-describe-azure-cosmos-db"
     },
     {
-      "question_id": "19",
+      "id": "19",
       "question": "True or False: In relational databases, an entity relationship diagram (ERD) describes the data structure and relationships between tables.",
-      "question_category": "true/false",
-      "question_type": "Database Design",
+      "type": "true/false",
+      "category": "Database Design",
       "options": [{ "a": "True" }, { "b": "False" }],
       "answer": { "a": "True" },
       "explanation": "An ERD is a diagram that illustrates the entities in a database and the relationships between them, aiding in the design of a relational database schema.",
       "citation": "https://learn.microsoft.com/en-us/training/modules/explore-relational-data-offerings/2-understand-relational-data"
     },
     {
-      "question_id": "20",
+      "id": "20",
       "question": "Fill in the blank: In Azure, the _____ service is used to analyze large volumes of data for business insights.",
-      "question_category": "fill-in-the-blank",
-      "question_type": "Azure Analytics",
+      "type": "fill-in-the-blank",
+      "category": "Azure Analytics",
       "options": [
         { "a": "Azure Data Lake" },
         { "b": "Azure Synapse Analytics" },
@@ -281,10 +281,10 @@
       "citation": "https://learn.microsoft.com/en-us/training/modules/examine-components-of-modern-data-warehouse/2-describe-warehousing"
     },
     {
-      "question_id": "21",
+      "id": "21",
       "question": "Which of the following is not a characteristic of a data lake?",
-      "question_category": "multiple choice",
-      "question_type": "Data Lake",
+      "type": "multiple choice",
+      "category": "Data Lake",
       "options": [
         { "a": "Stores data in its raw form" },
         { "b": "Schema on read" },
@@ -296,10 +296,10 @@
       "citation": "https://learn.microsoft.com/en-us/training/modules/explore-core-data-concepts/4-databases"
     },
     {
-      "question_id": "22",
+      "id": "22",
       "question": "What does SQL stand for?",
-      "question_category": "fill-in-the-blank",
-      "question_type": "SQL Basics",
+      "type": "fill-in-the-blank",
+      "category": "SQL Basics",
       "options": [
         { "a": "Structured Query Language" },
         { "b": "Standard Query Listing" },
@@ -311,10 +311,10 @@
       "citation": "https://learn.microsoft.com/en-us/training/modules/explore-relational-data-offerings/4-query-with-sql"
     },
     {
-      "question_id": "23",
+      "id": "23",
       "question": "Which of these Azure services is a managed, distributed, in-memory cache for Azure applications?",
-      "question_category": "multiple choice",
-      "question_type": "Azure Services",
+      "type": "multiple choice",
+      "category": "Azure Services",
       "options": [
         { "a": "Azure Databricks" },
         { "b": "Azure Cache for Redis" },
@@ -326,20 +326,20 @@
       "citation": "https://learn.microsoft.com/en-us/training/modules/explore-caching-azure"
     },
     {
-      "question_id": "24",
+      "id": "24",
       "question": "True or False: Power BI can only connect to Microsoft services for data visualization.",
-      "question_category": "true/false",
-      "question_type": "Power BI",
+      "type": "true/false",
+      "category": "Power BI",
       "options": [{ "a": "True" }, { "b": "False" }],
       "answer": { "b": "False" },
       "explanation": "Power BI connects to a broad range of data sources, not limited to Microsoft services, allowing for complex data visualizations from various origins.",
       "citation": "https://learn.microsoft.com/en-us/training/modules/explore-fundamentals-data-visualization/2-power-bi"
     },
     {
-      "question_id": "25",
+      "id": "25",
       "question": "Fill in the blank: In a data model, a _____ depicts a many-to-many relationship between entities.",
-      "question_category": "fill-in-the-blank",
-      "question_type": "Data Modeling",
+      "type": "fill-in-the-blank",
+      "category": "Data Modeling",
       "options": [
         { "a": "foreign key" },
         { "b": "junction table" },
@@ -351,10 +351,10 @@
       "citation": "https://learn.microsoft.com/en-us/training/modules/explore-relational-data-offerings/3-normalization"
     },
     {
-      "question_id": "26",
+      "id": "26",
       "question": "Which Azure service is designed for large-scale analytics capable of handling both structured and unstructured data?",
-      "question_category": "multiple choice",
-      "question_type": "Azure Analytics",
+      "type": "multiple choice",
+      "category": "Azure Analytics",
       "options": [
         { "a": "Azure Data Share" },
         { "b": "Azure Synapse Analytics" },
@@ -366,10 +366,10 @@
       "citation": "https://learn.microsoft.com/en-us/training/modules/examine-components-of-modern-data-warehouse/2-describe-warehousing"
     },
     {
-      "question_id": "27",
+      "id": "27",
       "question": "Which of the following is a feature of Azure Blob Storage?",
-      "question_category": "multiple choice",
-      "question_type": "Azure Storage",
+      "type": "multiple choice",
+      "category": "Azure Storage",
       "options": [
         { "a": "Hadoop-based analytics" },
         { "b": "File sharing for OS-level access" },
@@ -383,20 +383,20 @@
       "citation": "https://learn.microsoft.com/en-us/training/modules/explore-provision-deploy-non-relational-data-services-azure/2-azure-blob-storage"
     },
     {
-      "question_id": "28",
+      "id": "28",
       "question": "True or False: An index in a database can help speed up data retrieval queries.",
-      "question_category": "true/false",
-      "question_type": "Database Index",
+      "type": "true/false",
+      "category": "Database Index",
       "options": [{ "a": "True" }, { "b": "False" }],
       "answer": { "a": "True" },
       "explanation": "Indexes in databases significantly speed up data retrieval times by allowing the database to find data using the indexed fields rather than scanning entire tables.",
       "citation": "https://learn.microsoft.com/en-us/training/modules/explore-relational-data-offerings/5-database-objects"
     },
     {
-      "question_id": "29",
+      "id": "29",
       "question": "In Azure Cosmos DB, which of the following is NOT a supported consistency level?",
-      "question_category": "multiple choice",
-      "question_type": "Azure Cosmos DB",
+      "type": "multiple choice",
+      "category": "Azure Cosmos DB",
       "options": [
         { "a": "Strong" },
         { "b": "Eventual" },
@@ -408,10 +408,10 @@
       "citation": "https://learn.microsoft.com/en-us/training/modules/explore-non-relational-data-stores-azure/2-describe-azure-cosmos-db"
     },
     {
-      "question_id": "30",
+      "id": "30",
       "question": "Fill in the blank: Data _____ refers to the methods and technologies used to ensure data quality and accuracy.",
-      "question_category": "fill-in-the-blank",
-      "question_type": "Data Management",
+      "type": "fill-in-the-blank",
+      "category": "Data Management",
       "options": [
         { "a": "governance" },
         { "b": "analysis" },
@@ -423,10 +423,10 @@
       "citation": "https://learn.microsoft.com/en-us/training/modules/explore-core-data-concepts/6-analytical-processing"
     },
     {
-      "question_id": "31",
+      "id": "31",
       "question": "A healthcare organization needs to store massive amounts of data from patient monitoring devices that need to be analyzed daily to generate health insights. Which Azure service would be most suitable?",
-      "question_category": "multiple choice",
-      "question_type": "data storage and analysis",
+      "type": "multiple choice",
+      "category": "data storage and analysis",
       "options": [
         { "a": "Azure SQL Database" },
         { "b": "Azure Data Lake Storage" },
@@ -438,10 +438,10 @@
       "citation": "https://learn.microsoft.com/en-us/training/modules/explore-provision-deploy-non-relational-data-services-azure/3-azure-data-lake-gen2"
     },
     {
-      "question_id": "32",
+      "id": "32",
       "question": "A retail company wants to build a scalable web application with a globally distributed user base, requiring low-latency access to data for users worldwide. Which Azure database service should they choose?",
-      "question_category": "multiple choice",
-      "question_type": "global distribution",
+      "type": "multiple choice",
+      "category": "global distribution",
       "options": [
         { "a": "Azure SQL Database" },
         { "b": "Azure Cosmos DB" },
@@ -453,10 +453,10 @@
       "citation": "https://learn.microsoft.com/en-us/training/modules/explore-non-relational-data-stores-azure/2-describe-azure-cosmos-db"
     },
     {
-      "question_id": "33",
+      "id": "33",
       "question": "A financial services company needs to maintain highly secure and ACID-compliant data transactions for its online payment systems. Which Azure service is most appropriate?",
-      "question_category": "multiple choice",
-      "question_type": "transactional data security",
+      "type": "multiple choice",
+      "category": "transactional data security",
       "options": [
         { "a": "Azure Table Storage" },
         { "b": "Azure SQL Database" },
@@ -468,10 +468,10 @@
       "citation": "https://learn.microsoft.com/en-us/training/modules/explore-provision-deploy-relational-database-offerings-azure/2-azure-sql"
     },
     {
-      "question_id": "34",
+      "id": "34",
       "question": "A logistics company is building an IoT solution to track vehicles in real-time. The data needs processing with low latency. Which Azure service should be used?",
-      "question_category": "multiple choice",
-      "question_type": "real-time processing",
+      "type": "multiple choice",
+      "category": "real-time processing",
       "options": [
         { "a": "Azure Stream Analytics" },
         { "b": "Azure Data Factory" },
@@ -483,10 +483,10 @@
       "citation": "https://learn.microsoft.com/en-us/training/modules/explore-fundamentals-stream-processing/3-explore-common-elements"
     },
     {
-      "question_id": "35",
+      "id": "35",
       "question": "A startup focusing on customer reviews wants to perform sentiment analysis on customer feedback collected from various platforms. What Azure service can facilitate this?",
-      "question_category": "multiple choice",
-      "question_type": "data processing and analysis",
+      "type": "multiple choice",
+      "category": "data processing and analysis",
       "options": [
         { "a": "Azure AI Text Analytics" },
         { "b": "Azure Synapse Analytics" },
@@ -498,10 +498,10 @@
       "citation": "https://learn.microsoft.com/en-us/azure/cognitive-services/text-analytics/overview"
     },
     {
-      "question_id": "36",
+      "id": "36",
       "question": "A government agency is creating a policy archive that must store various types of formatted documents while ensuring easy access and cost-effective storage. Which Azure service would you recommend?",
-      "question_category": "multiple choice",
-      "question_type": "document storage and accessibility",
+      "type": "multiple choice",
+      "category": "document storage and accessibility",
       "options": [
         { "a": "Azure Blob Storage" },
         { "b": "Azure Table Storage" },
@@ -513,10 +513,10 @@
       "citation": "https://learn.microsoft.com/en-us/training/modules/explore-provision-deploy-non-relational-data-services-azure/2-azure-blob-storage"
     },
     {
-      "question_id": "37",
+      "id": "37",
       "question": "A multinational company needs to aggregate data from different regional offices for quarterly financial reporting. Which Azure service is best suited for this data integration task?",
-      "question_category": "multiple choice",
-      "question_type": "data integration",
+      "type": "multiple choice",
+      "category": "data integration",
       "options": [
         { "a": "Azure Data Lake Storage" },
         { "b": "Azure SQL Database" },
@@ -528,10 +528,10 @@
       "citation": "https://learn.microsoft.com/en-us/training/modules/examine-components-of-modern-data-warehouse/data-ingestion-pipelines"
     },
     {
-      "question_id": "38",
+      "id": "38",
       "question": "An online game development company wants to store user profiles with variable data structures. The data needs to be globally accessible and highly available. What Azure service should they use?",
-      "question_category": "multiple choice",
-      "question_type": "non-relational database",
+      "type": "multiple choice",
+      "category": "non-relational database",
       "options": [
         { "a": "Azure Table Storage" },
         { "b": "Azure SQL Database" },
@@ -543,10 +543,10 @@
       "citation": "https://learn.microsoft.com/en-us/training/modules/explore-non-relational-data-stores-azure/3-cosmos-db-apis"
     },
     {
-      "question_id": "39",
+      "id": "39",
       "question": "A marketing team needs to visualize and create interactive reports from data stored in various Azure data sources. Which Azure service should they employ?",
-      "question_category": "multiple choice",
-      "question_type": "data visualization",
+      "type": "multiple choice",
+      "category": "data visualization",
       "options": [
         { "a": "Azure Synapse Analytics" },
         { "b": "Power BI" },
@@ -558,10 +558,10 @@
       "citation": "https://learn.microsoft.com/en-us/training/modules/explore-fundamentals-data-visualization/2-power-bi"
     },
     {
-      "question_id": "40",
+      "id": "40",
       "question": "An analytics firm needs to process historical sales data to predict future sales trends using machine learning models. Which service or combination of services might best support this task?",
-      "question_category": "multiple choice",
-      "question_type": "machine learning and analytics",
+      "type": "multiple choice",
+      "category": "machine learning and analytics",
       "options": [
         { "a": "Azure Data Factory and Azure Machine Learning" },
         { "b": "Azure SQL Database and Azure Data Lake" },
@@ -573,10 +573,10 @@
       "citation": "https://learn.microsoft.com/en-us/azure/machine-learning/overview-what-is-azure-ml"
     },
     {
-      "question_id": "41",
+      "id": "41",
       "question": "A social media platform needs a back-end service to efficiently store and query large JSON documents representing user activities. Which database service should they consider?",
-      "question_category": "multiple choice",
-      "question_type": "database selection for JSON",
+      "type": "multiple choice",
+      "category": "database selection for JSON",
       "options": [
         { "a": "Azure Table Storage" },
         { "b": "Azure Blob Storage" },
@@ -588,10 +588,10 @@
       "citation": "https://learn.microsoft.com/en-us/training/modules/explore-non-relational-data-stores-azure/3-cosmos-db-apis"
     },
     {
-      "question_id": "42",
+      "id": "42",
       "question": "A large chain of retail stores needs to centralize daily sales data from its branches worldwide and perform batch processing overnight for report generation. Which Azure service should be prioritized?",
-      "question_category": "multiple choice",
-      "question_type": "centralized data processing",
+      "type": "multiple choice",
+      "category": "centralized data processing",
       "options": [
         { "a": "Azure Stream Analytics" },
         { "b": "Azure Data Factory" },
@@ -603,10 +603,10 @@
       "citation": "https://learn.microsoft.com/en-us/training/modules/examine-components-of-modern-data-warehouse/4-analytical-data-stores"
     },
     {
-      "question_id": "43",
+      "id": "43",
       "question": "A research institution collecting temperature sensor data from across a city wants to analyze the data to understand climate patterns. Which combination of Azure services would be appropriate for this task?",
-      "question_category": "multiple choice",
-      "question_type": "environmental data analysis",
+      "type": "multiple choice",
+      "category": "environmental data analysis",
       "options": [
         { "a": "Azure Stream Analytics and Azure SQL Database" },
         { "b": "Azure Data Lake Storage and Azure Synapse Analytics" },
@@ -618,10 +618,10 @@
       "citation": "https://learn.microsoft.com/en-us/training/modules/explore-provision-deploy-non-relational-data-services-azure/3-azure-data-lake-gen2"
     },
     {
-      "question_id": "44",
+      "id": "44",
       "question": "A news organization wants to develop a real-time analytics platform to process millions of incoming articles daily for insights and trends. Which Azure service would be central to this solution?",
-      "question_category": "multiple choice",
-      "question_type": "real-time analytics",
+      "type": "multiple choice",
+      "category": "real-time analytics",
       "options": [
         { "a": "Azure SQL Database" },
         { "b": "Azure Data Lake Storage" },
@@ -633,10 +633,10 @@
       "citation": "https://learn.microsoft.com/en-us/training/modules/explore-fundamentals-stream-processing/3-explore-common-elements"
     },
     {
-      "question_id": "45",
+      "id": "45",
       "question": "An agricultural company is deploying IoT sensors across its farms to monitor soil conditions, and they need to visualize the data in near real-time. Which Azure tool would provide the best visualization for this scenario?",
-      "question_category": "multiple choice",
-      "question_type": "IoT data visualization",
+      "type": "multiple choice",
+      "category": "IoT data visualization",
       "options": [
         { "a": "Azure Power BI" },
         { "b": "Azure Data Lake" },
@@ -648,10 +648,10 @@
       "citation": "https://learn.microsoft.com/en-us/training/modules/explore-fundamentals-data-visualization/2-power-bi"
     },
     {
-      "question_id": "46",
+      "id": "46",
       "question": "A logistics firm requires a scalable and high-performance database to track shipments and update their status in real-time. What combination of Azure services should be utilized?",
-      "question_category": "multiple choice",
-      "question_type": "logistics data management",
+      "type": "multiple choice",
+      "category": "logistics data management",
       "options": [
         { "a": "Azure Cosmos DB with Table API" },
         { "b": "Azure Blob Storage and Azure SQL Database" },
@@ -663,10 +663,10 @@
       "citation": "https://learn.microsoft.com/en-us/training/modules/explore-non-relational-data-stores-azure/3-cosmos-db-apis"
     },
     {
-      "question_id": "47",
+      "id": "47",
       "question": "A biotech firm needs to build a data scientist team to work on drug discovery projects that require integrating various data sources and building data pipelines. Which Azure service would best support their efforts?",
-      "question_category": "multiple choice",
-      "question_type": "data science pipeline",
+      "type": "multiple choice",
+      "category": "data science pipeline",
       "options": [
         { "a": "Azure Machine Learning" },
         { "b": "Azure Data Factory" },
@@ -678,10 +678,10 @@
       "citation": "https://learn.microsoft.com/en-us/azure/data-factory/introduction"
     },
     {
-      "question_id": "48",
+      "id": "48",
       "question": "A manufacturing plant wants to predict equipment failures using historical data and real-time operational data. Which Azure solution offers the best approach?",
-      "question_category": "multiple choice",
-      "question_type": "predictive maintenance",
+      "type": "multiple choice",
+      "category": "predictive maintenance",
       "options": [
         { "a": "Azure SQL Database with Power BI" },
         { "b": "Azure Synapse Analytics with Azure Machine Learning" },
@@ -693,10 +693,10 @@
       "citation": "https://learn.microsoft.com/en-us/azure/machine-learning/how-to-predictive-maintenance-use-case"
     },
     {
-      "question_id": "49",
+      "id": "49",
       "question": "A university research group wants to perform complex joins and aggregations on structured datasets related to climate studies stored in cloud. Which Azure service would best facilitate these requirements?",
-      "question_category": "multiple choice",
-      "question_type": "complex data queries",
+      "type": "multiple choice",
+      "category": "complex data queries",
       "options": [
         { "a": "Azure Table Storage" },
         { "b": "Azure SQL Database" },
@@ -708,10 +708,10 @@
       "citation": "https://learn.microsoft.com/en-us/azure/sql-database/sql-database-managed-instance-features"
     },
     {
-      "question_id": "50",
+      "id": "50",
       "question": "A tech company is launching a new product that requires synchronized user data across mobile devices in different regions, ensuring high availability and low latency. Which database service should they employ?",
-      "question_category": "multiple choice",
-      "question_type": "global data synchronization",
+      "type": "multiple choice",
+      "category": "global data synchronization",
       "options": [
         { "a": "Azure Table Storage" },
         { "b": "Azure Cosmos DB" },
@@ -723,10 +723,10 @@
       "citation": "https://learn.microsoft.com/en-us/azure/cosmos-db/introduction"
     },
     {
-      "question_id": "51",
+      "id": "51",
       "question": "Which SQL statement is used to remove the records from a table?",
-      "question_category": "multiple choice",
-      "question_type": "SQL syntax",
+      "type": "multiple choice",
+      "category": "SQL syntax",
       "options": [
         { "a": "DELETE" },
         { "b": "REMOVE" },
@@ -738,10 +738,10 @@
       "citation": "https://learn.microsoft.com/en-us/sql/t-sql/statements/delete-transact-sql?view=sql-server-ver15"
     },
     {
-      "question_id": "52",
+      "id": "52",
       "question": "What SQL clause is used to filter the records returned by a SELECT query?",
-      "question_category": "multiple choice",
-      "question_type": "SQL filtering",
+      "type": "multiple choice",
+      "category": "SQL filtering",
       "options": [
         { "a": "WHERE" },
         { "b": "FILTER" },
@@ -753,10 +753,10 @@
       "citation": "https://learn.microsoft.com/en-us/sql/t-sql/queries/select-transact-sql?view=sql-server-ver15#where-clause"
     },
     {
-      "question_id": "53",
+      "id": "53",
       "question": "Which data type is best used for a column that stores large quantities of text in SQL Server?",
-      "question_category": "multiple choice",
-      "question_type": "SQL data types",
+      "type": "multiple choice",
+      "category": "SQL data types",
       "options": [
         { "a": "VARCHAR" },
         { "b": "INT" },
@@ -768,10 +768,10 @@
       "citation": "https://learn.microsoft.com/en-us/sql/t-sql/data-types/ntext-text-and-image-transact-sql?view=sql-server-ver15"
     },
     {
-      "question_id": "54",
+      "id": "54",
       "question": "What is the primary purpose of the SQL JOIN operation?",
-      "question_category": "multiple choice",
-      "question_type": "SQL operations",
+      "type": "multiple choice",
+      "category": "SQL operations",
       "options": [
         { "a": "To append data to a table" },
         {
@@ -787,10 +787,10 @@
       "citation": "https://learn.microsoft.com/en-us/sql/t-sql/queries/select-joins?view=sql-server-ver15"
     },
     {
-      "question_id": "55",
+      "id": "55",
       "question": "Fill in the blank: In SQL, the ___ statement is used to return distinct values from a specified column.",
-      "question_category": "fill-in-the-blank",
-      "question_type": "SQL distinct",
+      "type": "fill-in-the-blank",
+      "category": "SQL distinct",
       "options": [
         { "a": "DISTINCT" },
         { "b": "UNIQUE" },
@@ -802,10 +802,10 @@
       "citation": "https://learn.microsoft.com/en-us/sql/t-sql/queries/select-distinct-transact-sql?view=sql-server-ver15"
     },
     {
-      "question_id": "56",
+      "id": "56",
       "question": "What is the purpose of using the 'ORDER BY' clause in a SQL query?",
-      "question_category": "multiple choice",
-      "question_type": "SQL query operations",
+      "type": "multiple choice",
+      "category": "SQL query operations",
       "options": [
         { "a": "To group results based on a specific column" },
         { "b": "To sort the result-set in ascending or descending order" },
@@ -819,10 +819,10 @@
       "citation": "https://learn.microsoft.com/en-us/sql/t-sql/queries/select-order-by-clause-transact-sql?view=sql-server-ver15"
     },
     {
-      "question_id": "57",
+      "id": "57",
       "question": "In data visualization, which type of chart is most effective for displaying trends over time?",
-      "question_category": "multiple choice",
-      "question_type": "data visualization",
+      "type": "multiple choice",
+      "category": "data visualization",
       "options": [
         { "a": "Pie Chart" },
         { "b": "Line Chart" },
@@ -834,10 +834,10 @@
       "citation": "https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-types-for-reports"
     },
     {
-      "question_id": "58",
+      "id": "58",
       "question": "Which SQL function is used to calculate the total sum of a numeric column?",
-      "question_category": "multiple choice",
-      "question_type": "SQL aggregate functions",
+      "type": "multiple choice",
+      "category": "SQL aggregate functions",
       "options": [
         { "a": "TOTAL()" },
         { "b": "SUM()" },
@@ -849,20 +849,20 @@
       "citation": "https://learn.microsoft.com/en-us/sql/t-sql/functions/sum-transact-sql?view=sql-server-ver15"
     },
     {
-      "question_id": "59",
+      "id": "59",
       "question": "True or False: In SQL Server, the INT data type can store decimal numbers.",
-      "question_category": "true/false",
-      "question_type": "SQL data types",
+      "type": "true/false",
+      "category": "SQL data types",
       "options": [{ "a": "True" }, { "b": "False" }],
       "answer": { "b": "False" },
       "explanation": "The INT data type in SQL Server is used to store whole numbers. If decimal numbers are needed, the DECIMAL or FLOAT data types should be used.",
       "citation": "https://learn.microsoft.com/en-us/sql/t-sql/data-types/numeric-types?view=sql-server-ver15"
     },
     {
-      "question_id": "60",
+      "id": "60",
       "question": "What SQL constraint is used to ensure that a column cannot contain NULL values?",
-      "question_category": "multiple choice",
-      "question_type": "SQL constraints",
+      "type": "multiple choice",
+      "category": "SQL constraints",
       "options": [
         { "a": "FOREIGN KEY" },
         { "b": "UNIQUE" },
@@ -874,10 +874,10 @@
       "citation": "https://learn.microsoft.com/en-us/sql/t-sql/statements/create-table-sql-transact-sql?view=sql-server-ver15#not-null"
     },
     {
-      "question_id": "61",
+      "id": "61",
       "question": "Which Power BI component is used to share reports and dashboards in the cloud?",
-      "question_category": "multiple choice",
-      "question_type": "data visualization tools",
+      "type": "multiple choice",
+      "category": "data visualization tools",
       "options": [
         { "a": "Power BI Desktop" },
         { "b": "Power BI Service" },
@@ -889,10 +889,10 @@
       "citation": "https://learn.microsoft.com/en-us/power-bi/fundamentals/service-overview"
     },
     {
-      "question_id": "62",
+      "id": "62",
       "question": "In SQL, which clause is used to group rows that have the same values in specified columns into summary rows?",
-      "question_category": "multiple choice",
-      "question_type": "SQL statements",
+      "type": "multiple choice",
+      "category": "SQL statements",
       "options": [
         { "a": "GROUP BY" },
         { "b": "ORDER BY" },
@@ -904,10 +904,10 @@
       "citation": "https://learn.microsoft.com/en-us/sql/t-sql/queries/select-group-by-transact-sql?view=sql-server-ver15"
     },
     {
-      "question_id": "63",
+      "id": "63",
       "question": "Which data type in SQL Server is used to store a date without time part?",
-      "question_category": "multiple choice",
-      "question_type": "SQL data types",
+      "type": "multiple choice",
+      "category": "SQL data types",
       "options": [
         { "a": "TIME" },
         { "b": "DATETIME" },
@@ -919,10 +919,10 @@
       "citation": "https://learn.microsoft.com/en-us/sql/t-sql/data-types/date-transact-sql?view=sql-server-ver15"
     },
     {
-      "question_id": "64",
+      "id": "64",
       "question": "What type of visualization in Power BI is best suited for displaying proportions of a whole?",
-      "question_category": "multiple choice",
-      "question_type": "data visualization",
+      "type": "multiple choice",
+      "category": "data visualization",
       "options": [
         { "a": "Bar Chart" },
         { "b": "Line Chart" },
@@ -934,20 +934,20 @@
       "citation": "https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-types-for-reports"
     },
     {
-      "question_id": "65",
+      "id": "65",
       "question": "True or False: In SQL, the result of a LEFT JOIN will include all rows from the left table and matched rows from the right table.",
-      "question_category": "true/false",
-      "question_type": "SQL joins",
+      "type": "true/false",
+      "category": "SQL joins",
       "options": [{ "a": "True" }, { "b": "False" }],
       "answer": { "a": "True" },
       "explanation": "A LEFT JOIN in SQL returns all records from the left table and the matched records from the right table. If no match is found, NULLs are returned for columns from the right table.",
       "citation": "https://learn.microsoft.com/en-us/sql/t-sql/queries/select-joins?view=sql-server-ver15"
     },
     {
-      "question_id": "66",
+      "id": "66",
       "question": "In SQL, what does the CONCAT function do?",
-      "question_category": "multiple choice",
-      "question_type": "SQL functions",
+      "type": "multiple choice",
+      "category": "SQL functions",
       "options": [
         { "a": "Joins tables together" },
         { "b": "Adds numeric values" },
@@ -959,10 +959,10 @@
       "citation": "https://learn.microsoft.com/en-us/sql/t-sql/functions/concat-transact-sql?view=sql-server-ver15"
     },
     {
-      "question_id": "67",
+      "id": "67",
       "question": "Fill in the blank: In SQL, the ___ keyword is used to specify a condition while fetching data from a single table or joining with multiple tables.",
-      "question_category": "fill-in-the-blank",
-      "question_type": "SQL filtering",
+      "type": "fill-in-the-blank",
+      "category": "SQL filtering",
       "options": [
         { "a": "WHERE" },
         { "b": "HAVING" },
@@ -974,10 +974,10 @@
       "citation": "https://learn.microsoft.com/en-us/sql/t-sql/queries/select-transact-sql?view=sql-server-ver15#where-clause"
     },
     {
-      "question_id": "68",
+      "id": "68",
       "question": "What visualization tool in Power BI allows users to create reports by dragging and dropping fields into a visual canvas?",
-      "question_category": "multiple choice",
-      "question_type": "data visualization",
+      "type": "multiple choice",
+      "category": "data visualization",
       "options": [
         { "a": "Power BI Desktop" },
         { "b": "Power BI Service" },
@@ -989,10 +989,10 @@
       "citation": "https://learn.microsoft.com/en-us/power-bi/desktop-getting-started"
     },
     {
-      "question_id": "69",
+      "id": "69",
       "question": "What is the purpose of using a HAVING clause in SQL?",
-      "question_category": "multiple choice",
-      "question_type": "SQL clauses",
+      "type": "multiple choice",
+      "category": "SQL clauses",
       "options": [
         { "a": "To apply conditions across rows for grouped data" },
         { "b": "To select columns from a table" },
@@ -1004,20 +1004,20 @@
       "citation": "https://learn.microsoft.com/en-us/sql/t-sql/queries/select-having-transact-sql?view=sql-server-ver15"
     },
     {
-      "question_id": "70",
+      "id": "70",
       "question": "True or False: When using SQL aliases, the alias name must be enclosed in double quotes or brackets.",
-      "question_category": "true/false",
-      "question_type": "SQL syntax",
+      "type": "true/false",
+      "category": "SQL syntax",
       "options": [{ "a": "True" }, { "b": "False" }],
       "answer": { "b": "False" },
       "explanation": "While SQL aliases can be enclosed in double quotes or brackets, it is not a strict requirement unless the alias includes spaces or special characters.",
       "citation": "https://learn.microsoft.com/en-us/sql/t-sql/queries/select-transact-sql?view=sql-server-ver15#alias"
     },
     {
-      "question_id": "71",
+      "id": "71",
       "question": "What does the 'A' in ACID stand for in database transactions?",
-      "question_category": "multiple choice",
-      "question_type": "ACID properties",
+      "type": "multiple choice",
+      "category": "ACID properties",
       "options": [
         { "a": "Availability" },
         { "b": "Atomicity" },
@@ -1029,20 +1029,20 @@
       "citation": "https://learn.microsoft.com/en-us/azure/architecture/guide/design-principles/acid"
     },
     {
-      "question_id": "72",
+      "id": "72",
       "question": "True or False: The Isolation property in ACID ensures that concurrent transactions result in the database being in a consistent state.",
-      "question_category": "true/false",
-      "question_type": "ACID properties",
+      "type": "true/false",
+      "category": "ACID properties",
       "options": [{ "a": "True" }, { "b": "False" }],
       "answer": { "a": "True" },
       "explanation": "Isolation in ACID properties ensures that concurrently executing transactions cannot interfere with each other, leading to a consistent database state.",
       "citation": "https://learn.microsoft.com/en-us/azure/architecture/guide/design-principles/acid"
     },
     {
-      "question_id": "73",
+      "id": "73",
       "question": "Which ACID property ensures that a transaction's operations do not affect concurrent transactions, maintaining their effects as though executed sequentially?",
-      "question_category": "multiple choice",
-      "question_type": "ACID properties",
+      "type": "multiple choice",
+      "category": "ACID properties",
       "options": [
         { "a": "Atomicity" },
         { "b": "Consistency" },
@@ -1054,10 +1054,10 @@
       "citation": "https://learn.microsoft.com/en-us/azure/architecture/guide/design-principles/acid"
     },
     {
-      "question_id": "74",
+      "id": "74",
       "question": "Fill in the blank: The ___ property of ACID ensures that once a transaction commits, its changes are permanent even in the case of a system failure.",
-      "question_category": "fill-in-the-blank",
-      "question_type": "ACID properties",
+      "type": "fill-in-the-blank",
+      "category": "ACID properties",
       "options": [
         { "a": "Atomicity" },
         { "b": "Consistency" },
@@ -1069,10 +1069,10 @@
       "citation": "https://learn.microsoft.com/en-us/azure/architecture/guide/design-principles/acid"
     },
     {
-      "question_id": "75",
+      "id": "75",
       "question": "Which ACID property guarantees that a database starts in a consistent state and ends in a consistent state after a transaction?",
-      "question_category": "multiple choice",
-      "question_type": "ACID properties",
+      "type": "multiple choice",
+      "category": "ACID properties",
       "options": [
         { "a": "Atomicity" },
         { "b": "Consistency" },
@@ -1084,20 +1084,20 @@
       "citation": "https://learn.microsoft.com/en-us/azure/architecture/guide/design-principles/acid"
     },
     {
-      "question_id": "76",
+      "id": "76",
       "question": "True or False: In ACID, Atomicity implies that partial completion of transactions is possible.",
-      "question_category": "true/false",
-      "question_type": "ACID properties",
+      "type": "true/false",
+      "category": "ACID properties",
       "options": [{ "a": "True" }, { "b": "False" }],
       "answer": { "b": "False" },
       "explanation": "Atomicity ensures transactions are all-or-nothing processes, meaning they must either complete entirely or not at all, preventing partial completion.",
       "citation": "https://learn.microsoft.com/en-us/azure/architecture/guide/design-principles/acid"
     },
     {
-      "question_id": "77",
+      "id": "77",
       "question": "A database system experiences a crash after a transaction has completed. Which ACID property ensures that the results of the transaction are still available?",
-      "question_category": "multiple choice",
-      "question_type": "ACID properties",
+      "type": "multiple choice",
+      "category": "ACID properties",
       "options": [
         { "a": "Atomicity" },
         { "b": "Consistency" },
@@ -1109,10 +1109,10 @@
       "citation": "https://learn.microsoft.com/en-us/azure/architecture/guide/design-principles/acid"
     },
     {
-      "question_id": "78",
+      "id": "78",
       "question": "Which of the following ACID properties is primarily concerned with avoiding anomalies by managing how transactions interact?",
-      "question_category": "multiple choice",
-      "question_type": "ACID properties",
+      "type": "multiple choice",
+      "category": "ACID properties",
       "options": [
         { "a": "Atomicity" },
         { "b": "Consistency" },
@@ -1124,10 +1124,10 @@
       "citation": "https://learn.microsoft.com/en-us/azure/architecture/guide/design-principles/acid"
     },
     {
-      "question_id": "79",
+      "id": "79",
       "question": "In the context of ACID, what happens if a database transaction fails to complete?",
-      "question_category": "multiple choice",
-      "question_type": "ACID properties",
+      "type": "multiple choice",
+      "category": "ACID properties",
       "options": [
         { "a": "The database remains in an inconsistent state" },
         { "b": "The changes made by the transaction are rolled back" },
@@ -1139,10 +1139,10 @@
       "citation": "https://learn.microsoft.com/en-us/azure/architecture/guide/design-principles/acid"
     },
     {
-      "question_id": "80",
+      "id": "80",
       "question": "Which of the following scenarios is directly addressed by the Consistency property of ACID transactions?",
-      "question_category": "multiple choice",
-      "question_type": "ACID properties",
+      "type": "multiple choice",
+      "category": "ACID properties",
       "options": [
         { "a": "Concurrent transactions not affecting each other" },
         { "b": "Ensuring all parts of a transaction are completed or none" },
@@ -1160,10 +1160,10 @@
       "citation": "https://learn.microsoft.com/en-us/azure/architecture/guide/design-principles/acid"
     },
     {
-      "question_id": "81",
+      "id": "81",
       "question": "Which Azure service is primarily used for large-scale analytics that involves processing complex queries across massive datasets?",
-      "question_category": "multiple choice",
-      "question_type": "large-scale analytics",
+      "type": "multiple choice",
+      "category": "large-scale analytics",
       "options": [
         { "a": "Azure SQL Database" },
         { "b": "Azure Synapse Analytics" },
@@ -1175,10 +1175,10 @@
       "citation": "https://learn.microsoft.com/en-us/training/modules/examine-components-of-modern-data-warehouse/2-describe-warehousing"
     },
     {
-      "question_id": "82",
+      "id": "82",
       "question": "What is a primary benefit of real-time data analytics?",
-      "question_category": "multiple choice",
-      "question_type": "real-time data analytics",
+      "type": "multiple choice",
+      "category": "real-time data analytics",
       "options": [
         { "a": "Reduced storage costs" },
         { "b": "Immediate insights and decision-making" },
@@ -1190,10 +1190,10 @@
       "citation": "https://learn.microsoft.com/en-us/training/modules/explore-fundamentals-stream-processing/4-fabric-real-time-intelligence"
     },
     {
-      "question_id": "83",
+      "id": "83",
       "question": "Which tool in Power BI allows for the transformation and modeling of raw data before visualization?",
-      "question_category": "multiple choice",
-      "question_type": "Power BI",
+      "type": "multiple choice",
+      "category": "Power BI",
       "options": [
         { "a": "Power Query" },
         { "b": "Power BI Service" },
@@ -1205,20 +1205,20 @@
       "citation": "https://learn.microsoft.com/en-us/power-query/"
     },
     {
-      "question_id": "84",
+      "id": "84",
       "question": "True or False: Azure Stream Analytics is suitable for batch processing of data.",
-      "question_category": "true/false",
-      "question_type": "real-time data analytics",
+      "type": "true/false",
+      "category": "real-time data analytics",
       "options": [{ "a": "True" }, { "b": "False" }],
       "answer": { "b": "False" },
       "explanation": "Azure Stream Analytics is optimized for processing real-time data streams, rather than batch processing, which deals with historical data.",
       "citation": "https://learn.microsoft.com/en-us/training/modules/explore-fundamentals-stream-processing/3-explore-common-elements"
     },
     {
-      "question_id": "85",
+      "id": "85",
       "question": "What type of workload does Power BI support best?",
-      "question_category": "multiple choice",
-      "question_type": "Power BI",
+      "type": "multiple choice",
+      "category": "Power BI",
       "options": [
         { "a": "Transaction processing" },
         { "b": "Data visualization and reporting" },
@@ -1230,10 +1230,10 @@
       "citation": "https://learn.microsoft.com/en-us/power-bi/fundamentals/power-bi-service-Version-Overview"
     },
     {
-      "question_id": "86",
+      "id": "86",
       "question": "Fill in the blank: ___ is used in Azure Synapse Analytics to define robust, scalable, and performant data models for analytics.",
-      "question_category": "fill-in-the-blank",
-      "question_type": "large-scale analytics",
+      "type": "fill-in-the-blank",
+      "category": "large-scale analytics",
       "options": [
         { "a": "Azure SQL Database" },
         { "b": "Data Lake Storage" },
@@ -1245,10 +1245,10 @@
       "citation": "https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-on-demand/overview-what-is"
     },
     {
-      "question_id": "87",
+      "id": "87",
       "question": "Which feature in Power BI enables users to create customized calculations and analysis using DAX (Data Analysis Expressions)?",
-      "question_category": "multiple choice",
-      "question_type": "Power BI",
+      "type": "multiple choice",
+      "category": "Power BI",
       "options": [
         { "a": "Power Query Editor" },
         { "b": "Data Visualization" },
@@ -1260,10 +1260,10 @@
       "citation": "https://learn.microsoft.com/en-us/power-bi/transform-model/desktop-data-modeling"
     },
     {
-      "question_id": "88",
+      "id": "88",
       "question": "Which Azure service is best for handling complex queries and generating reports across terabytes of business data?",
-      "question_category": "multiple choice",
-      "question_type": "large-scale analytics",
+      "type": "multiple choice",
+      "category": "large-scale analytics",
       "options": [
         { "a": "Azure Data Factory" },
         { "b": "Azure Synapse Analytics" },
@@ -1275,10 +1275,10 @@
       "citation": "https://learn.microsoft.com/en-us/training/modules/examine-components-of-modern-data-warehouse/2-describe-warehousing"
     },
     {
-      "question_id": "89",
+      "id": "89",
       "question": "Which visualization type in Power BI is most appropriate for showing the part-to-whole relationships?",
-      "question_category": "multiple choice",
-      "question_type": "Power BI",
+      "type": "multiple choice",
+      "category": "Power BI",
       "options": [
         { "a": "Line Chart" },
         { "b": "Pie Chart" },
@@ -1290,10 +1290,10 @@
       "citation": "https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-types-for-reports"
     },
     {
-      "question_id": "90",
+      "id": "90",
       "question": "True or False: In a large-scale analytics environment, batch processing is used to handle historical data analysis.",
-      "question_category": "true/false",
-      "question_type": "large-scale analytics",
+      "type": "true/false",
+      "category": "large-scale analytics",
       "options": [{ "a": "True" }, { "b": "False" }],
       "answer": { "a": "True" },
       "explanation": "Batch processing involves handling large volumes of historical data in predefined groups, which is a cornerstone of large-scale analytics environments for comprehensive analysis.",
