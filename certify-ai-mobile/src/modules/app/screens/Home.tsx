@@ -3,18 +3,27 @@
  */
 import React from "react";
 import { SafeAreaView } from "react-native-safe-area-context";
-import { Text, View, StyleSheet, Button } from "react-native";
+import { Text, View, StyleSheet } from "react-native";
 import translate from "@helpers/localization";
 import { showToast } from "@helpers/toast/showToast";
+import {
+  Button,
+  ButtonText,
+  ButtonSpinner,
+  ButtonIcon,
+  ButtonGroup,
+} from "@components/ui/button";
 
 function Home() {
   return (
     <SafeAreaView style={styles.safeView}>
       <View style={styles.root}>
         <View style={styles.container}>
-          <Text style={styles.fontBlack}>MİLVASOFT</Text>
+          <Text style={styles.fontBlack}></Text>
         </View>
-        <Button onPress={() => showToast("ShowToast")} title="Show Toast" />
+        <Button>
+          <ButtonText>Hello World!</ButtonText>
+        </Button>
         <Text style={styles.fontBlack}>{translate("name")}</Text>
       </View>
     </SafeAreaView>

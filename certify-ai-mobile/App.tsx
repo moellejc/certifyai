@@ -11,6 +11,8 @@ import Store from "./src/store";
 import RootNavigation from "./src/routers";
 import CustomProvider from "./src/providers";
 import ErrorBoundary from "./src/providers/ErrorBoundary";
+import "./global.css";
+import { GluestackUIProvider } from "./src/components/ui/gluestack-ui-provider";
 
 enableScreens();
 
@@ -28,7 +30,9 @@ function App() {
     <ErrorBoundary>
       <Provider store={Store}>
         <CustomProvider>
-          <RootNavigation />
+          <GluestackUIProvider>
+            <RootNavigation />
+          </GluestackUIProvider>
         </CustomProvider>
       </Provider>
     </ErrorBoundary>
