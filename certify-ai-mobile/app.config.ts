@@ -7,7 +7,7 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
   slug: "certify-ai-mobile",
   scheme: "com.certifyai",
   version: "1.0.0",
-  sdkVersion: "51.0.0",
+  sdkVersion: "52.0.0",
   orientation: "portrait",
   icon: "./src/assets/images/icon.png",
   userInterfaceStyle: "automatic",
