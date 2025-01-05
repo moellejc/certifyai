@@ -8,8 +8,11 @@ import { navigate } from "@helpers/router";
 import Routes, { ProfileStackParams } from "@src/utils/Routes";
 import { useNavigation } from "@react-navigation/native";
 import { StackNavigationProp } from "@react-navigation/stack";
+import { SignedIn, SignedOut, useUser } from "@clerk/clerk-expo";
 
 function Profile() {
+  const { user } = useUser();
+
   const navigation = useNavigation<StackNavigationProp<ProfileStackParams>>();
 
   const goToSettings = useCallback(() => navigate(Routes.Settings), []);
@@ -22,7 +25,10 @@ function Profile() {
   return (
     <SafeAreaView style={styles.safeView}>
       <View style={styles.root}>
-        <Text style={styles.fontBlack}>Ali Burhan Keskin</Text>
+        <Text style={styles.fontBlack}>{user?.fullName}</Text>
+        <Text style={styles.fontBlack}>
+          {user?.emailAddresses[0].emailAddress}
+        </Text>
         <View style={styles.siginButton}>
           <Button onPress={goToPost} title="Go To Post" />
         </View>

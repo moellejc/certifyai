@@ -13,6 +13,17 @@ import CustomProvider from "./src/providers";
 import ErrorBoundary from "./src/providers/ErrorBoundary";
 import "./global.css";
 import { GluestackUIProvider } from "./src/components/ui/gluestack-ui-provider";
+import { ClerkProvider, ClerkLoaded } from "@clerk/clerk-expo";
+import { tokenCache } from "./src/store/cache";
+
+/** Clerk authentication setup */
+const publishableKey = process.env.EXPO_PUBLIC_CLERK_PUBLISHABLE_KEY!;
+
+if (!publishableKey) {
+  throw new Error(
+    "Missing Publishable Key. Please set EXPO_PUBLIC_CLERK_PUBLISHABLE_KEY in your .env"
+  );
+}
 
 enableScreens();
 
@@ -31,7 +42,14 @@ function App() {
       <Provider store={Store}>
         <CustomProvider>
           <GluestackUIProvider>
-            <RootNavigation />
+            <ClerkProvider
+              tokenCache={tokenCache}
+              publishableKey={publishableKey}
+            >
+              <ClerkLoaded>
+                <RootNavigation />
+              </ClerkLoaded>
+            </ClerkProvider>
           </GluestackUIProvider>
         </CustomProvider>
       </Provider>

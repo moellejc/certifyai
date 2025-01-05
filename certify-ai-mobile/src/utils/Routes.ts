@@ -5,6 +5,8 @@ export enum Routes {
   Main = "Main",
   Home = "Home",
   Login = "Login",
+  SignIn = "SignIn",
+  SignUp = "SignUp",
   ProfileNav = "ProfileNav",
   Profile = "Profile",
   Settings = "Settings",
@@ -18,6 +20,8 @@ export type RootStackParams = {
   [Routes.Main]: undefined;
   [Routes.Home]: undefined;
   [Routes.Login]: undefined;
+  [Routes.SignIn]: undefined;
+  [Routes.SignUp]: undefined;
 };
 
 /**

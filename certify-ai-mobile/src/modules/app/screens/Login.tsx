@@ -1,6 +1,3 @@
-/**
- * @author Ali Burhan Keskin <alikeskin@milvasoft.com>
- */
 import React, { useCallback } from "react";
 import { View, Text, StyleSheet, Button } from "react-native";
 import { useDispatch } from "react-redux";

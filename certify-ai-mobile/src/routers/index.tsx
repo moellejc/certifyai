@@ -8,6 +8,8 @@ import { SafeAreaProvider } from "react-native-safe-area-context";
 import { useTheme } from "@src/hooks";
 import { navigationRef } from "../helpers/router";
 import Login from "@modules/app/screens/Login";
+import SignUp from "@modules/auth/screens/SignUp";
+import SignIn from "@modules/auth/screens/SignIn";
 import BottomNavigation from "./BottomNavigation";
 import { ScreenOptions } from "@utils/ScreenOptions";
 import Routes, { RootStackParams } from "@utils/Routes";
@@ -56,8 +58,8 @@ function RootNavigation() {
           ) : (
             <>
               <Stack.Screen
-                name={Routes.Login}
-                component={Login}
+                name={Routes.SignIn}
+                component={SignIn}
                 options={{ headerShown: false }}
               />
             </>
