@@ -31,7 +31,7 @@ export default function TabNavigator() {
       />
 
       <Tab.Screen
-        name="Profile"
+        name="ProfileNav"
         component={ProfileStack}
         options={{
           tabBarIcon: ({ color }) => (

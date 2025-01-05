@@ -44,7 +44,7 @@ function RootNavigation() {
           {isSignedIn ? (
             <>
               <Stack.Screen
-                name={Routes.Home}
+                name={Routes.Main}
                 component={BottomNavigation}
                 options={{
                   gestureEnabled: false,

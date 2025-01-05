@@ -14,6 +14,7 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
   runtimeVersion: {
     policy: "sdkVersion",
   },
+  newArchEnabled: true,
   assetBundlePatterns: ["./src/assets/images/*"],
   locales: {
     tr: "./src/assets/languages/turkish.json",
