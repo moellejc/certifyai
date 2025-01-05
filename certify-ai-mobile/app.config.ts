@@ -52,4 +52,5 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
       projectId: "49e4e24d-c928-4ff1-815d-f1a58ca580bd",
     },
   },
+  plugins: ["expo-font", "expo-localization"],
 });
