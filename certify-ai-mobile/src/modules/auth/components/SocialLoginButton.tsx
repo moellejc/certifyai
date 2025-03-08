@@ -1,5 +1,6 @@
 import { useOAuth, useUser } from "@clerk/clerk-expo";
-import { Ionicons } from "@expo/vector-icons";
+import { useDispatch } from "react-redux";
+import { SetUser } from "@modules/app/redux/appSlice";
 import {
   ActivityIndicator,
   StyleSheet,
@@ -32,6 +33,8 @@ const SocialLoginButton = ({
   const { startOAuthFlow } = useOAuth({ strategy: getStrategy() });
   const { user } = useUser();
   const [isLoading, setIsLoading] = useState(false);
+
+  const dispatch = useDispatch();
 
   //   const router = useRouter();
   const buttonText = () => {
@@ -69,9 +72,11 @@ const SocialLoginButton = ({
 
       // If sign in was successful, set the active session
       if (createdSessionId) {
-        console.log("Session created", createdSessionId);
         setActive!({ session: createdSessionId });
         await user?.reload();
+
+        // Setting the use will update the root navigation and app with go to home
+        dispatch(SetUser(user));
       } else {
         // Use signIn or signUp returned from startOAuthFlow
         // for next steps, such as MFA

@@ -1,13 +1,6 @@
 import React, { useCallback } from "react";
 import { View, StyleSheet } from "react-native";
 import { useSignIn, useOAuth } from "@clerk/clerk-expo";
-import { useDispatch } from "react-redux";
-import { showToast } from "@helpers/toast/showToast";
-import { SetUser } from "@modules/app/redux/appSlice";
-import { navigate } from "@helpers/router";
-import Routes, { RootStackParams } from "@src/utils/Routes";
-import { useNavigation } from "@react-navigation/native";
-import { StackNavigationProp } from "@react-navigation/stack";
 import * as WebBrowser from "expo-web-browser";
 import SocialLoginButton from "../components/SocialLoginButton";
 import { Heading } from "@components/ui/heading";
@@ -31,20 +24,6 @@ export default function SignIn() {
 
   const [emailAddress, setEmailAddress] = React.useState("");
   const [password, setPassword] = React.useState("");
-
-  // Go to the home screen after a Sign in event is successful
-  const dispatch = useDispatch();
-
-  const goHomePage = React.useCallback(() => {
-    showToast("Welcome Back");
-
-    dispatch(SetUser({ name: "Joe Moeller" }));
-  }, []);
-
-  // go to SignUp screen if user doesn't have an account
-  const navigation = useNavigation<StackNavigationProp<RootStackParams>>();
-
-  const goToSignUp = useCallback(() => navigate(Routes.SignUp), []);
 
   useWarmUpBrowser();
 

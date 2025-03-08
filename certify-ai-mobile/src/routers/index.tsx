@@ -1,28 +1,30 @@
-import * as React from "react";
+import React, { useEffect } from "react";
 import { NavigationContainer, DefaultTheme } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
+import { useDispatch } from "react-redux";
+import { SetUser } from "@modules/app/redux/appSlice";
 import { useAppSelector } from "@src/store";
 import translate from "@helpers/localization";
 import { enableScreens } from "react-native-screens";
 import { SafeAreaProvider } from "react-native-safe-area-context";
 import { useTheme } from "@src/hooks";
 import { navigationRef } from "../helpers/router";
-import Login from "@modules/app/screens/Login";
-import SignUp from "@modules/auth/screens/SignUp";
 import SignIn from "@modules/auth/screens/SignIn";
 import BottomNavigation from "./BottomNavigation";
 import { ScreenOptions } from "@utils/ScreenOptions";
 import Routes, { RootStackParams } from "@utils/Routes";
+import { useOAuth, useUser } from "@clerk/clerk-expo";
 
 enableScreens();
 
 const Stack = createStackNavigator<RootStackParams>();
 
 function RootNavigation() {
-  const isSignedIn = useAppSelector((s) => s.AppReducer?.isSignedIn);
+  const { isSignedIn, user, isLoaded } = useUser();
   const userColorScheme = useAppSelector((s) => s?.AppReducer?.userColorScheme);
   const theme = useTheme();
   const isDarkTheme = userColorScheme === "dark";
+  const dispatch = useDispatch();
 
   const navigationTheme = {
     dark: isDarkTheme,
@@ -35,6 +37,12 @@ function RootNavigation() {
       notification: theme.notification,
     },
   };
+
+  useEffect(() => {
+    console.log(`User is: \n${JSON.stringify(user, null, 2)}`);
+    console.log(`User Logged In: ${isSignedIn}`);
+    if (isSignedIn) dispatch(SetUser(user));
+  }, []);
 
   return (
     <SafeAreaProvider>
